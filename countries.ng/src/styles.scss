@@ -1,4 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+html {
+    color-scheme: light dark;
+    @include mat.theme(
+        (
+            color: mat.$azure-palette,
+            typography: Roboto,
+            density: 0,
+        )
+    );
+}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+app-root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    main {
+        flex: 1 1 auto;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        padding-inline: 2rem;
+        justify-content: space-between;
+        height: 50px;
+        background-color: var(--mat-sys-primary);
+        color: var(--mat-sys-on-secondary);
+    }
+}

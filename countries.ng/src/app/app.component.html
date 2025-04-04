@@ -1,4 +1,24 @@
+<nav>
+    <mat-toolbar class="mat-primary">
+        <button mat-icon-button>
+            <mat-icon>menu</mat-icon>
+        </button>
+      <span>Where in the world?</span>
+      <span class="spacer"></span>
+      <a mat-button routerLink="/home" routerLinkActive="active">
+        <mat-icon>public</mat-icon>
+        World
+      </a>
+      <a mat-button routerLink="/countries" routerLinkActive="active">
+        <mat-icon>list</mat-icon>
+        Countries
+      </a>
+    </mat-toolbar>
+</nav>
+<main>
+    <router-outlet> </router-outlet>
+</main>
 
-<router-outlet>
-
-</router-outlet>
+<footer>
+    <p>Countries &copy; 2025</p>
+</footer>

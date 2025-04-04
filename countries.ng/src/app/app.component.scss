@@ -1,0 +1,16 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+.mat-primary {
+    background-color: var(--mat-sys-primary);
+    color: var(--mat-sys-on-primary);
+    & > * {
+        color: inherit;
+    }
+}
+
+.active {
+    background-color: var(--mat-sys-inverse-primary);
+    color: var(--mat-sys-primary) !important;  
+}
